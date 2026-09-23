@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Textil artesanal de Alhué</title>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="25" stdDeviation="25" flood-color="#5a3c30" flood-opacity=".22"/></filter>
+    <pattern id="weave" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M0 3h16M0 11h16M3 0v16M11 0v16" stroke="#fff" stroke-width="1" opacity=".1"/><path d="M0 7h16M7 0v16" stroke="#49342c" stroke-width="1" opacity=".1"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="#d7c9ae"/>
+  <circle cx="402" cy="213" r="136" fill="#d68a4d" opacity=".28"/>
+  <g filter="url(#shadow)" transform="rotate(2 400 540)">
+    <path d="M176 140h448v648c-61 37-118 50-174 50h-91c-65 0-124-14-183-50z" fill="#244c48" stroke="#49342c" stroke-width="7"/>
+    <path d="M176 140h448v105H176z" fill="#c94f43"/>
+    <path d="M176 261h448v82H176z" fill="#e7a638"/>
+    <path d="M176 360h448v96H176z" fill="#d8c99d"/>
+    <path d="M176 473h448v80H176z" fill="#bf4d3e"/>
+    <path d="M176 570h448v110H176z" fill="#e7a638"/>
+    <path d="M176 696h448v92H176z" fill="#4b8f86"/>
+    <g fill="none" stroke="#f4e1b9" stroke-width="7" stroke-dasharray="10 8">
+      <path d="M208 292h384M208 408h384M208 514h384M208 741h384"/>
+    </g>
+    <path d="M176 140h448v648c-61 37-118 50-174 50h-91c-65 0-124-14-183-50z" fill="url(#weave)"/>
+    <path d="M176 140h448v648c-61 37-118 50-174 50h-91c-65 0-124-14-183-50z" fill="none" stroke="#49342c" stroke-width="7" stroke-dasharray="12 8"/>
+  </g>
+  <g fill="#e5bc4d"><path d="M193 829h24v98h-24zM238 838h24v104h-24zM283 846h24v108h-24zM328 851h24v111h-24zM373 854h24v115h-24zM418 851h24v111h-24zM463 846h24v108h-24zM508 838h24v104h-24zM553 829h24v98h-24z"/></g>
+  <ellipse cx="400" cy="910" rx="265" ry="38" fill="#5a3c30" opacity=".12"/>
+</svg>

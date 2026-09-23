@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Arpillera Jardín de la cordillera</title>
+  <defs>
+    <filter id="noise"><feTurbulence baseFrequency=".65" numOctaves="3" seed="4" result="n"/><feBlend in="SourceGraphic" in2="n" mode="soft-light"/></filter>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M0 4h18M0 13h18M4 0v18M13 0v18" stroke="#fff" opacity=".08"/><path d="M0 8h18M8 0v18" stroke="#4d2f28" opacity=".1"/></pattern>
+    <g id="petal"><path d="M0-43C-23-61-14-84 1-67c13-28 39-19 29 9 28 4 30 34 3 40 8 28-19 40-34 16-21 20-45 0-29-24-31-1-35-31-6-37 4-29 33-30 36-4Z" fill="#f2c45b" stroke="#55382f" stroke-width="4"/><circle r="17" fill="#c94f43"/></g>
+  </defs>
+  <rect width="800" height="1000" fill="#d4b07b"/>
+  <g filter="url(#noise)">
+    <rect x="85" y="48" width="630" height="904" rx="8" fill="#2c5949"/>
+    <path d="M110 75h580v850H110z" fill="#b95143" stroke="#f0c75a" stroke-width="28" stroke-dasharray="20 12"/>
+    <path d="M145 112h510v776H145z" fill="#e1b86e" stroke="#55382f" stroke-width="7" stroke-dasharray="12 8"/>
+    <path d="M175 145h450v710H175z" fill="#6bb6b5"/>
+    <circle cx="400" cy="238" r="68" fill="#f1bd48" stroke="#55382f" stroke-width="6"/>
+    <path d="m175 424 115-108 94 95 93-150 148 164v430H175z" fill="#5f8450" stroke="#55382f" stroke-width="7" stroke-dasharray="12 7"/>
+    <path d="M175 481h450v374H175z" fill="#d4a066"/>
+    <path d="m175 560 128-82 110 89v208H175Zm235 0 104-78 111 86v201H410Z" fill="#c64f40" stroke="#55382f" stroke-width="6"/>
+    <path d="M175 615h450v138H175z" fill="#e3a638" stroke="#55382f" stroke-width="6"/>
+    <path d="M257 860c0-96 62-171 143-171s143 75 143 171" fill="none" stroke="#305d52" stroke-width="24"/>
+    <path d="M312 860c0-56 37-100 88-100s88 44 88 100" fill="#f3ddb0" stroke="#55382f" stroke-width="6"/>
+    <use href="#petal" transform="translate(245 302) scale(.9)"/>
+    <use href="#petal" transform="translate(560 340) scale(.72)"/>
+    <use href="#petal" transform="translate(610 650) scale(.78)"/>
+    <use href="#petal" transform="translate(190 690) scale(.7)"/>
+    <g fill="#355f4f" stroke="#55382f" stroke-width="4"><path d="M240 700c-12-46-8-77 3-103M215 661c-25-17-34-36-39-62M265 646c25-18 37-38 44-62" fill="none" stroke-width="10"/></g>
+  </g>
+  <rect x="110" y="75" width="580" height="850" fill="url(#grid)"/>
+  <path d="M85 48h630v904H85z" fill="none" stroke="#55382f" stroke-width="8" stroke-dasharray="14 9"/>
+</svg>

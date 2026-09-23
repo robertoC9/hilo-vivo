@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hilo Vivo: colección de arpilleras elaboradas por artesanos de la comuna de Alhué, Chile, junto a otras artesanías hechas a mano." />
+  <meta name="theme-color" content="#f4efe4" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <title>Hilo Vivo — Arpilleras de Alhué hechas a mano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+  <div class="announcement">
+    <div class="container announcement__inner">
+      <p><span aria-hidden="true">✦</span> Envíos a todo Chile</p>
+      <p class="announcement__message">Arpilleras de artesanos de la comuna de Alhué, Chile</p>
+      <a href="#newsletter">Únete al círculo <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Hilo Vivo, inicio">
+        <svg class="brand__mark" viewBox="0 0 44 44" aria-hidden="true">
+          <path d="M22 2 42 22 22 42 2 22Z" fill="currentColor" />
+          <path d="M22 9 35 22 22 35 9 22Z" fill="var(--cream)" />
+          <circle cx="22" cy="22" r="4" fill="var(--terracotta)" />
+        </svg>
+        <span class="brand__copy">
+          <strong>HILO VIVO</strong>
+          <small>artesanía chilena</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-menu" aria-label="Navegación principal">
+        <a href="#colecciones">Colección Alhué</a>
+        <a href="#productos">Arpilleras</a>
+        <a href="#productos">Artesanías</a>
+        <a href="#artesanias">En Chile</a>
+        <a href="#historia">Nuestra historia</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-button" id="open-search" type="button" aria-label="Buscar piezas" title="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        </button>
+        <a class="icon-button account-button" href="#newsletter" aria-label="Mi cuenta" title="Mi cuenta">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c.6-4 2.7-6 6.5-6s5.9 2 6.5 6"/></svg>
+        </a>
+        <button class="icon-button cart-button" id="open-cart" type="button" aria-label="Abrir carrito" title="Carrito">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="menu-button" id="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero__canvas" id="threads-canvas" aria-hidden="true"></canvas>
+      <div class="hero__decor hero__decor--one" aria-hidden="true"></div>
+      <div class="hero__decor hero__decor--two" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow"><span></span> Colección local · Alhué, Chile</p>
+          <h1 id="hero-title">Alhué <em>se teje</em><br /> a mano.</h1>
+          <p class="hero__lead">Una colección de arpilleras creada por artesanos de la comuna de Alhué. Cada pieza guarda el tiempo, las manos y la memoria de quienes la elaboran.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#colecciones">Explorar colección <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#historia">Conoce nuestro origen <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero__proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="assets/arpillera-1-corregida.jpg" alt="" />
+              <img src="assets/product-arpillera.svg" alt="" />
+              <img src="assets/hero-arpillera.svg" alt="" />
+            </div>
+            <p><strong>Artesanos de Alhué</strong><span>creando con memoria y tradición</span></p>
+          </div>
+        </div>
+
+        <figure class="hero__visual">
+          <div class="hero__image-wrap">
+            <img src="assets/arpillera-1-zoom.jpg" alt="Arpillera artesanal de Alhué con montañas, vegetación y cordillera" width="840" height="1160" fetchpriority="high" />
+            <span class="hero__image-label">Pieza 01 · Alhué</span>
+          </div>
+          <figcaption class="hero__caption">
+            <span>01 / Colección</span>
+            <div>
+              <strong>Cordillera en fibra</strong>
+              <small>Colección de Alhué · Hilo Vivo</small>
+            </div>
+          </figcaption>
+          <div class="handmade-stamp" aria-label="Hecho a mano">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="stamp-path" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0" /></defs>
+              <text><textPath href="#stamp-path" startOffset="0">HECHO A MANO · HECHO A MANO · </textPath></text>
+              <path d="M60 40c-9 8-19 13-28 15 7 5 12 12 14 23 6-8 13-13 23-14-4-9-6-17-9-24Z" fill="currentColor"/>
+              <path d="M53 64c10 0 17 7 17 17-10 0-17-7-17-17Z" fill="currentColor"/>
+            </svg>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <div class="craft-ribbon" aria-label="Técnicas y materiales chilenos">
+      <div class="craft-ribbon__track">
+        <span>ARPILLERAS</span><i>✦</i><span>TEJIDOS</span><i>✦</i><span>CERÁMICA</span><i>✦</i><span>CESTERÍA</span><i>✦</i><span>MADERA</span><i>✦</i><span>PIEDRA</span><i>✦</i>
+        <span aria-hidden="true">ARPILLERAS</span><i aria-hidden="true">✦</i><span aria-hidden="true">TEJIDOS</span><i aria-hidden="true">✦</i><span aria-hidden="true">CERÁMICA</span><i aria-hidden="true">✦</i><span aria-hidden="true">CESTERÍA</span><i aria-hidden="true">✦</i><span aria-hidden="true">MADERA</span><i aria-hidden="true">✦</i><span aria-hidden="true">PIEDRA</span><i aria-hidden="true">✦</i>
+      </div>
+    </div>
+
+    <section class="collections section" id="colecciones">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> La colección de Alhué</p>
+            <h2>Arpilleras que cuentan<br /><em>una historia</em></h2>
+          </div>
+          <p>Esta selección reúne piezas elaboradas por artesanos de la comuna de Alhué. Cada puntada, color y textura da cuenta de un trabajo hecho con tiempo y memoria.</p>
+        </div>
+
+        <div class="collection-grid">
+          <a class="collection-card collection-card--tall reveal" href="#productos" data-jump-filter="arpilleras">
+            <img src="assets/arpillera-1-corregida.jpg" alt="Pieza principal de la colección de arpilleras de Alhué" loading="lazy" />
+            <span class="collection-card__shade"></span>
+            <div class="collection-card__content">
+              <span>01 · Comuna de Alhué</span>
+              <h3>Arpilleras de Alhué</h3>
+              <p>Una historia bordada, pieza a pieza.</p>
+            </div>
+            <span class="collection-card__arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="collection-card reveal reveal--delay" href="#productos" data-jump-filter="textiles">
+            <img src="assets/telar.jpg" alt="Textil tejido a mano exhibido en un telar" loading="lazy" />
+            <span class="collection-card__shade"></span>
+            <div class="collection-card__content">
+              <span>02 · Hecho a mano</span>
+              <h3>Textiles</h3>
+              <p>Lana, color y nuevas formas.</p>
+            </div>
+            <span class="collection-card__arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="collection-card reveal reveal--delay-2" href="#productos" data-jump-filter="ceramica">
+            <img src="assets/pomaire.jpg" alt="Taller de cerámica artesanal en Pomaire" loading="lazy" />
+            <span class="collection-card__shade"></span>
+            <div class="collection-card__content">
+              <span>03 · Tierra y fuego</span>
+              <h3>Cerámica</h3>
+              <p>Objetos con memoria de barro.</p>
+            </div>
+            <span class="collection-card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" id="productos">
+      <div class="container">
+        <div class="section-heading section-heading--products reveal">
+          <div>
+            <p class="eyebrow"><span></span> Artesanía seleccionada</p>
+            <h2>Piezas <em>con historia</em></h2>
+          </div>
+          <p>La colección de Alhué comparte espacio con otras piezas artesanales seleccionadas por su origen, su técnica y la huella de quien las hizo.</p>
+        </div>
+
+        <div class="product-toolbar reveal">
+          <div class="filters" id="product-filters" role="group" aria-label="Filtrar piezas">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+            <button class="filter-button" type="button" data-filter="arpilleras" aria-pressed="false">Arpilleras</button>
+            <button class="filter-button" type="button" data-filter="textiles" aria-pressed="false">Textiles</button>
+            <button class="filter-button" type="button" data-filter="ceramica" aria-pressed="false">Cerámica</button>
+            <button class="filter-button" type="button" data-filter="cesteria" aria-pressed="false">Cestería</button>
+            <button class="filter-button" type="button" data-filter="madera" aria-pressed="false">Madera</button>
+            <button class="filter-button" type="button" data-filter="piedra" aria-pressed="false">Piedra</button>
+          </div>
+          <label class="sort-control">
+            <span>Ordenar</span>
+            <select id="product-sort" aria-label="Ordenar piezas">
+              <option value="featured">Destacadas</option>
+              <option value="price-asc">Menor precio</option>
+              <option value="price-desc">Mayor precio</option>
+              <option value="name">Nombre A–Z</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="results-status" id="results-status" aria-live="polite">Mostrando 6 piezas</p>
+
+        <div class="product-grid" id="product-grid">
+          <article class="product-card reveal" data-category="arpilleras" data-api-slug="cordillera-en-fibra" data-name="Cordillera en fibra" data-origin="Alhué" data-material="Textil artesanal" data-price="34900" data-image="/dynamic-assets/arpillera-1-corregida.jpg" data-description="Una pieza de la colección de arpilleras de Alhué, elaborada a mano por artesanos de la comuna.">
+            <button class="favorite-button" type="button" aria-label="Agregar Cordillera en fibra a favoritos" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.8c-1.7-2-4.8-2.1-6.6-.2L12 7.8 9.8 5.6C8 3.7 4.9 3.8 3.2 5.8c-1.5 1.8-1.4 4.5.2 6.2L12 21l8.6-9c1.6-1.7 1.7-4.4.2-6.2Z"/></svg>
+            </button>
+            <button class="product-card__quick" type="button" data-product="0" aria-label="Ver detalle de Cordillera en fibra">
+              <span class="product-card__media">
+                <img src="assets/arpillera-1-corregida.jpg" alt="Arpillera Cordillera en fibra, de la colección de Alhué" loading="lazy" />
+                <span class="product-tag">Colección Alhué</span>
+                <span class="quick-label">Ver pieza <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <div class="product-card__info">
+              <div><p class="product-card__origin">Alhué · Colección local</p><h3>Cordillera en fibra</h3><p class="product-card__material">Textil artesanal</p></div>
+              <div class="product-card__buy"><strong>$34.900 <small>CLP</small></strong><button class="add-button" type="button" data-add-to-cart data-name="Cordillera en fibra" data-price="34900" data-image="/dynamic-assets/arpillera-1-corregida.jpg" aria-label="Agregar Cordillera en fibra al carrito">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal--delay" data-category="textiles" data-api-slug="textil-de-alhue" data-name="Textil de Alhué" data-origin="Alhué" data-material="Lana artesanal" data-price="28500" data-image="/dynamic-assets/product-textil.svg" data-description="Una pieza textil de la colección de Alhué, creada a mano con color y formas que reflejan el trabajo de la comuna.">
+            <button class="favorite-button" type="button" aria-label="Agregar Textil de Alhué a favoritos" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.8c-1.7-2-4.8-2.1-6.6-.2L12 7.8 9.8 5.6C8 3.7 4.9 3.8 3.2 5.8c-1.5 1.8-1.4 4.5.2 6.2L12 21l8.6-9c1.6-1.7 1.7-4.4.2-6.2Z"/></svg>
+            </button>
+            <button class="product-card__quick" type="button" data-product="1" aria-label="Ver detalle de Textil de Alhué">
+              <span class="product-card__media">
+                <img src="assets/product-textil.svg" alt="Textil de Alhué" loading="lazy" />
+                <span class="product-tag">Nuevo</span>
+                <span class="quick-label">Ver pieza <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <div class="product-card__info">
+              <div><p class="product-card__origin">Alhué · Textil</p><h3>Textil de Alhué</h3><p class="product-card__material">Lana artesanal</p></div>
+              <div class="product-card__buy"><strong>$28.500 <small>CLP</small></strong><button class="add-button" type="button" data-add-to-cart data-name="Textil de Alhué" data-price="28500" data-image="/dynamic-assets/product-textil.svg" aria-label="Agregar Textil de Alhué al carrito">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="ceramica" data-api-slug="vasija-del-alba" data-name="Vasija del alba" data-origin="Pomaire" data-material="Barro esmaltado" data-price="19800" data-image="/dynamic-assets/product-ceramica.svg" data-description="Vasija de líneas orgánicas, realizada en barro local y acabada con una paleta mineral inspirada en la costa.">
+            <button class="favorite-button" type="button" aria-label="Agregar Vasija del alba a favoritos" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.8c-1.7-2-4.8-2.1-6.6-.2L12 7.8 9.8 5.6C8 3.7 4.9 3.8 3.2 5.8c-1.5 1.8-1.4 4.5.2 6.2L12 21l8.6-9c1.6-1.7 1.7-4.4.2-6.2Z"/></svg>
+            </button>
+            <button class="product-card__quick" type="button" data-product="2" aria-label="Ver detalle de Vasija del alba">
+              <span class="product-card__media">
+                <img src="assets/product-ceramica.svg" alt="Vasijas de cerámica Vasija del alba" loading="lazy" />
+                <span class="quick-label">Ver pieza <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <div class="product-card__info">
+              <div><p class="product-card__origin">Pomaire · Cerámica</p><h3>Vasija del alba</h3><p class="product-card__material">Barro esmaltado</p></div>
+              <div class="product-card__buy"><strong>$19.800 <small>CLP</small></strong><button class="add-button" type="button" data-add-to-cart data-name="Vasija del alba" data-price="19800" data-image="/dynamic-assets/product-ceramica.svg" aria-label="Agregar Vasija del alba al carrito">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal--delay" data-category="cesteria" data-api-slug="trama-del-sur" data-name="Trama del sur" data-origin="Artesanía chilena" data-material="Fibra vegetal" data-price="24900" data-image="/dynamic-assets/product-cesteria.svg" data-description="Canasto de trama abierta, construido con fibras vegetales y detalles en terracota.">
+            <button class="favorite-button" type="button" aria-label="Agregar Trama del sur a favoritos" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.8c-1.7-2-4.8-2.1-6.6-.2L12 7.8 9.8 5.6C8 3.7 4.9 3.8 3.2 5.8c-1.5 1.8-1.4 4.5.2 6.2L12 21l8.6-9c1.6-1.7 1.7-4.4.2-6.2Z"/></svg>
+            </button>
+            <button class="product-card__quick" type="button" data-product="3" aria-label="Ver detalle de Trama del sur">
+              <span class="product-card__media">
+                <img src="assets/product-cesteria.svg" alt="Canasto de cestería Trama del sur" loading="lazy" />
+                <span class="quick-label">Ver pieza <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <div class="product-card__info">
+              <div><p class="product-card__origin">Artesanía chilena · Cestería</p><h3>Trama del sur</h3><p class="product-card__material">Fibra vegetal</p></div>
+              <div class="product-card__buy"><strong>$24.900 <small>CLP</small></strong><button class="add-button" type="button" data-add-to-cart data-name="Trama del sur" data-price="24900" data-image="/dynamic-assets/product-cesteria.svg" aria-label="Agregar Trama del sur al carrito">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="madera" data-api-slug="cumbre-de-ulmo" data-name="Cumbre de ulmo" data-origin="Aysén" data-material="Madera nativa" data-price="16500" data-image="/dynamic-assets/product-madera.svg" data-description="Portavelas tallado en madera de ulmo, de líneas simples y acabados a mano.">
+            <button class="favorite-button" type="button" aria-label="Agregar Cumbre de ulmo a favoritos" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.8c-1.7-2-4.8-2.1-6.6-.2L12 7.8 9.8 5.6C8 3.7 4.9 3.8 3.2 5.8c-1.5 1.8-1.4 4.5.2 6.2L12 21l8.6-9c1.6-1.7 1.7-4.4.2-6.2Z"/></svg>
+            </button>
+            <button class="product-card__quick" type="button" data-product="4" aria-label="Ver detalle de Cumbre de ulmo">
+              <span class="product-card__media">
+                <img src="assets/product-madera.svg" alt="Portavelas de madera Cumbre de ulmo" loading="lazy" />
+                <span class="quick-label">Ver pieza <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <div class="product-card__info">
+              <div><p class="product-card__origin">Aysén · Madera</p><h3>Cumbre de ulmo</h3><p class="product-card__material">Madera nativa</p></div>
+              <div class="product-card__buy"><strong>$16.500 <small>CLP</small></strong><button class="add-button" type="button" data-add-to-cart data-name="Cumbre de ulmo" data-price="16500" data-image="/dynamic-assets/product-madera.svg" aria-label="Agregar Cumbre de ulmo al carrito">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal reveal--delay" data-category="piedra" data-api-slug="luz-de-costa" data-name="Luz de costa" data-origin="Toconao" data-material="Piedra volcánica" data-price="42000" data-image="/dynamic-assets/product-piedra.svg" data-description="Pieza esculpida en piedra volcánica, inspirada en las figuras y paisajes del desierto de Atacama.">
+            <button class="favorite-button" type="button" aria-label="Agregar Luz de costa a favoritos" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 5.8c-1.7-2-4.8-2.1-6.6-.2L12 7.8 9.8 5.6C8 3.7 4.9 3.8 3.2 5.8c-1.5 1.8-1.4 4.5.2 6.2L12 21l8.6-9c1.6-1.7 1.7-4.4.2-6.2Z"/></svg>
+            </button>
+            <button class="product-card__quick" type="button" data-product="5" aria-label="Ver detalle de Luz de costa">
+              <span class="product-card__media">
+                <img src="assets/product-piedra.svg" alt="Pieza de piedra tallada Luz de costa" loading="lazy" />
+                <span class="quick-label">Ver pieza <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <div class="product-card__info">
+              <div><p class="product-card__origin">Toconao · Piedra</p><h3>Luz de costa</h3><p class="product-card__material">Piedra volcánica</p></div>
+              <div class="product-card__buy"><strong>$42.000 <small>CLP</small></strong><button class="add-button" type="button" data-add-to-cart data-name="Luz de costa" data-price="42000" data-image="/dynamic-assets/product-piedra.svg" aria-label="Agregar Luz de costa al carrito">+</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section" id="historia">
+      <div class="container story__grid">
+        <div class="story__visual reveal">
+          <img src="assets/arpillera-1-corregida.jpg" alt="Detalle de una arpillera de la colección de Alhué" loading="lazy" />
+          <div class="story__badge">
+            <strong>01</strong>
+            <span>colección que<br />nace en Alhué</span>
+          </div>
+          <p class="story__caption">Colección de Alhué · Chile</p>
+        </div>
+
+        <div class="story__content reveal reveal--delay">
+          <p class="eyebrow"><span></span> Detrás de cada fibra</p>
+          <h2>El tiempo también<br />es parte de la <em>obra</em>.</h2>
+          <p class="story__lead">En Alhué, cada arpillera reúne el tiempo, la destreza y la memoria de quien la trabaja. Por eso adquirir una pieza de esta colección es recibir una historia entera, hecha a mano en su propia comuna.</p>
+          <ol class="story-steps">
+            <li><span>01</span><div><strong>Conocemos a los artesanos</strong><p>Cada pieza nace de una mano de Alhué.</p></div></li>
+            <li><span>02</span><div><strong>Valoramos cada proceso</strong><p>El tiempo de las manos es parte del valor.</p></div></li>
+            <li><span>03</span><div><strong>Compartimos su historia</strong><p>Una colección con identidad local.</p></div></li>
+          </ol>
+          <a class="text-link text-link--dark" href="#artesanias">Ver el territorio por territorio <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="territories section" id="artesanias">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> Chile, oficio por oficio</p>
+            <h2>Distintos pueblos.<br /><em>Una misma raíz.</em></h2>
+          </div>
+          <p>Del desierto al archipiélago, cada territorio desarrolla técnicas que son parte de su identidad.</p>
+        </div>
+
+        <div class="territories__grid">
+          <article class="territory-feature reveal">
+            <img src="assets/arpillera-1-corregida.jpg" alt="Detalle de la colección de arpilleras de Alhué" loading="lazy" />
+            <div class="territory-feature__overlay">
+              <span>Comuna de Alhué · Chile</span>
+              <h3>Alhué</h3>
+              <p>Arpilleras de la comuna, creadas a mano y cargadas de historia.</p>
+            </div>
+          </article>
+
+          <div class="territory-list">
+            <button class="territory-row reveal" type="button" data-territory="norte">
+              <span class="territory-row__number">01</span>
+              <span class="territory-row__copy"><small>Norte Grande</small><strong>Arcilla que recuerda el desierto</strong></span>
+              <span class="territory-row__icon" aria-hidden="true">↗</span>
+            </button>
+            <button class="territory-row reveal" type="button" data-territory="centro">
+              <span class="territory-row__number">02</span>
+              <span class="territory-row__copy"><small>Zona Central</small><strong>Arpilleras de Alhué y oficios de la zona</strong></span>
+              <span class="territory-row__icon" aria-hidden="true">↗</span>
+            </button>
+            <button class="territory-row reveal" type="button" data-territory="sur">
+              <span class="territory-row__number">03</span>
+              <span class="territory-row__copy"><small>Sur de Chile</small><strong>Telares, ulmo y la memoria del bosque</strong></span>
+              <span class="territory-row__icon" aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-label="Nuestra mirada">
+      <div class="container quote-section__inner reveal">
+        <span class="quote-section__mark" aria-hidden="true">“</span>
+        <blockquote>No compramos objetos.<br /><em>Recibimos historias.</em></blockquote>
+        <p>— Manifiesto Hilo Vivo</p>
+      </div>
+    </section>
+
+    <section class="newsletter section" id="newsletter">
+      <div class="container newsletter__card">
+        <div class="newsletter__mark" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><path d="M60 7 112 60 60 113 8 60Z"/><path d="M60 29 91 60 60 91 29 60Z"/><circle cx="60" cy="60" r="8"/></svg>
+        </div>
+        <div class="newsletter__copy reveal">
+          <p class="eyebrow"><span></span> Cartas de Hilo Vivo</p>
+          <h2>Historias que llegan<br /><em>a tu correo.</em></h2>
+          <p>Novedades, nuevas piezas y aprendizajes de manos maestras. Dos veces al mes, sin ruido.</p>
+        </div>
+        <form class="newsletter__form reveal reveal--delay" id="newsletter-form" novalidate>
+          <label for="newsletter-email">Tu correo electrónico</label>
+          <div class="newsletter__field">
+            <input id="newsletter-email" name="email" type="email" placeholder="tu@correo.cl" autocomplete="email" required />
+            <button type="submit" aria-label="Suscribirme">→</button>
+          </div>
+          <p class="form-message" id="form-message" aria-live="polite">Al suscribirte aceptas recibir novedades de Hilo Vivo.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="#inicio">
+          <svg class="brand__mark" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2 42 22 22 42 2 22Z" fill="currentColor"/><path d="M22 9 35 22 22 35 9 22Z" fill="var(--forest)"/><circle cx="22" cy="22" r="4" fill="var(--terracotta)"/></svg>
+          <span class="brand__copy"><strong>HILO VIVO</strong><small>artesanía chilena</small></span>
+        </a>
+        <p>Arpilleras de Alhué hechas con tiempo, manos y raíz.</p>
+        <div class="social-links" aria-label="Redes sociales">
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Pinterest">p</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <div class="footer__column"><h3>Explora</h3><a href="#colecciones">Colecciones</a><a href="#productos">Arpilleras</a><a href="#productos">Artesanías</a><a href="#artesanias">Por territorio</a></div>
+      <div class="footer__column"><h3>Nosotros</h3><a href="#historia">Nuestra historia</a><a href="#newsletter">Cartas</a><a href="#artesanias">Tiendas Presentes</a><a href="#newsletter">Contacto</a></div>
+      <div class="footer__column footer__contact"><h3>Visítanos</h3><p>Barrio Lastarria 86<br />Santiago, Chile</p><p>Lun — Sáb<br />11:00 — 18:00</p><a href="mailto:hola@hilovivo.cl">hola@hilovivo.cl</a></div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Hilo Vivo. Prototipo de tienda artesanal.</p>
+      <details class="photo-credits">
+        <summary>Créditos fotográficos</summary>
+        <div>
+          <p><em>Telar de la abuela</em> de Milefran, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, vía Wikimedia Commons.</p>
+          <p><em>Venta de artesanía en Pomaire</em> de Rjcastillo, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, vía Wikimedia Commons.</p>
+        </div>
+      </details>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="search-overlay" id="search-overlay" aria-hidden="true">
+    <div class="search-overlay__backdrop" data-close-search></div>
+    <section class="search-panel" role="dialog" aria-modal="true" aria-labelledby="search-title">
+      <div class="search-panel__top">
+        <p id="search-title">Busca una pieza, un material o un lugar</p>
+        <button type="button" data-close-search aria-label="Cerrar búsqueda">×</button>
+      </div>
+      <form id="search-form" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <input id="search-input" type="search" placeholder="¿Qué estás buscando?" autocomplete="off" />
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="search-suggestions">
+        <span>Prueba con</span>
+        <button type="button" data-search-term="Alhué">Alhué</button>
+        <button type="button" data-search-term="arpillera">arpillera</button>
+        <button type="button" data-search-term="cerámica">cerámica</button>
+      </div>
+      <p class="search-hint" id="search-hint">Escribe para encontrar piezas de toda la colección.</p>
+    </section>
+  </div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
+    <div class="cart-drawer__backdrop" data-close-cart></div>
+    <div class="cart-drawer__panel">
+      <div class="cart-drawer__header">
+        <div><p>Tu selección</p><h2 id="cart-title">Carrito <span id="drawer-count">(0)</span></h2></div>
+        <button type="button" data-close-cart aria-label="Cerrar carrito">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-drawer__footer">
+        <div class="cart-total"><span>Subtotal</span><strong id="cart-total">$0 CLP</strong></div>
+        <p>Envío calculado al finalizar la compra.</p>
+        <button class="button button--primary button--full" id="checkout-button" type="button">Continuar al pago <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal fade product-dialog" id="product-dialog" tabindex="-1" aria-labelledby="dialog-name" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <button class="product-dialog__close" type="button" data-bs-dismiss="modal" aria-label="Cerrar detalle">×</button>
+        <div class="modal-body p-0 product-dialog__grid">
+          <div class="product-dialog__image"><img id="dialog-image" src="assets/arpillera-1-corregida.jpg" alt="" /></div>
+          <div class="product-dialog__content">
+            <p class="eyebrow" id="dialog-origin">Alhué · Colección local</p>
+            <h2 id="dialog-name">Cordillera en fibra</h2>
+            <p class="product-dialog__description" id="dialog-description"></p>
+            <dl class="product-dialog__meta"><div><dt>Material</dt><dd id="dialog-material"></dd></div><div><dt>Técnica</dt><dd>Hecho a mano</dd></div></dl>
+            <strong class="product-dialog__price" id="dialog-price"></strong>
+            <button class="button button--primary button--full" id="dialog-add" type="button">Agregar al carrito <span aria-hidden="true">→</span></button>
+            <p class="product-dialog__shipping">Envío a todo Chile · Piezas únicas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-hidden="true">
+    <span class="toast__icon">✓</span>
+    <div><strong>Agregado a tu selección</strong><p id="toast-message">Cordillera en fibra</p></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

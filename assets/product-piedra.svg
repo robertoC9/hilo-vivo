@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Pieza de piedra volcánica Luz de costa</title>
+  <defs>
+    <filter id="shadow" x="-40%" y="-30%" width="180%" height="180%"><feDropShadow dx="0" dy="24" stdDeviation="25" flood-color="#3e342b" flood-opacity=".28"/></filter>
+    <filter id="stone" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="9" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#fff" surfaceScale="1.4" diffuseConstant=".65" result="light"><feDistantLight azimuth="225" elevation="52"/></feDiffuseLighting>
+      <feComposite in="light" in2="SourceGraphic" operator="arithmetic" k1=".7" k2=".45" k3=".15" k4="0"/>
+    </filter>
+    <pattern id="grain" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r=".9" fill="#40362f" opacity=".13"/><circle cx="10" cy="9" r=".7" fill="#fff" opacity=".12"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="#dfcfb4"/>
+  <path d="M0 0h800v292c-168 73-400 55-800 145Z" fill="#d99a3d"/>
+  <path d="M0 177c166-75 367-63 800-154v269H0Z" fill="#c16d43" opacity=".58"/>
+  <path d="M0 268c179-66 413-51 800-159v80c-330 85-592 68-800 150Z" fill="#a9523a" opacity=".35"/>
+  <path d="M0 734c211-45 437-39 800 12v254H0z" fill="#cdbb9e"/>
+  <ellipse cx="403" cy="829" rx="286" ry="50" fill="#4f4237" opacity=".15"/>
+
+  <g filter="url(#shadow)">
+    <path d="M206 774h388l42 78H165Z" fill="#b5a589" stroke="#65594c" stroke-width="7"/>
+    <path d="M226 775h348l24 47H202Z" fill="#d4c6aa" stroke="#65594c" stroke-width="6"/>
+    <path d="M278 717c-33-58-24-119 30-152 55-34 72-90 51-168-9-34 3-69 32-92 45-36 109-19 139 35 27 49 9 94-13 128 73 39 99 118 69 188-26 61-79 94-157 94-70 0-129-8-151-33Z" fill="#b8ad9d" stroke="#5d544b" stroke-width="9" filter="url(#stone)"/>
+    <path d="M359 306c46 30 87 34 123 12-3 71 16 128 57 171 33 35 45 77 36 126-10 56-49 93-116 110-66-9-102-42-112-100-12-69 18-118 90-147-46-45-69-101-78-172Z" fill="#c8bead" opacity=".78"/>
+    <path d="M345 403c46 29 101 31 164 3M321 465c58 33 129 33 212 0M310 530c67 34 147 32 240-4M319 597c68 29 145 26 230-8" fill="none" stroke="#74695d" stroke-width="9" stroke-linecap="round" opacity=".58"/>
+    <circle cx="400" cy="370" r="27" fill="#c96845" stroke="#5d544b" stroke-width="7"/>
+    <path d="M348 700c35 14 72 14 111 0" fill="none" stroke="#74695d" stroke-width="8" opacity=".55"/>
+  </g>
+
+  <path d="M97 678c94-35 189-44 284-28" fill="none" stroke="#9b6b48" stroke-width="10" stroke-linecap="round" opacity=".42"/>
+  <path d="M508 680c69 2 125 16 169 42" fill="none" stroke="#9b6b48" stroke-width="10" stroke-linecap="round" opacity=".42"/>
+  <rect width="800" height="1000" fill="url(#grain)"/>
+</svg>

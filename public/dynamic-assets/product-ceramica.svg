@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Vasijas de cerámica Vasija del alba</title>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#4e342b" flood-opacity=".24"/></filter>
+    <linearGradient id="clay" x1="0" x2="1"><stop stop-color="#9b4f37"/><stop offset=".45" stop-color="#d58b60"/><stop offset="1" stop-color="#8b432f"/></linearGradient>
+    <linearGradient id="cream" x1="0" x2="1"><stop stop-color="#d8c7a4"/><stop offset=".5" stop-color="#f3e6c9"/><stop offset="1" stop-color="#c7b38d"/></linearGradient>
+    <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".8" fill="#5c3a2d" opacity=".12"/><circle cx="6" cy="7" r=".6" fill="#fff" opacity=".12"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="#e9ddc6"/>
+  <path d="M0 787c194-34 357-20 800 0v213H0z" fill="#d7c3a0"/>
+  <ellipse cx="403" cy="801" rx="290" ry="52" fill="#604033" opacity=".13"/>
+  <g filter="url(#shadow)">
+    <g transform="translate(92 160)">
+      <path d="M105 85h160l-15 63c-5 28 8 43 34 63 59 45 66 146 9 197-52 46-157 49-216 7-62-44-70-144-14-193 33-29 46-48 39-78Z" fill="url(#clay)" stroke="#6b3b2b" stroke-width="7"/>
+      <ellipse cx="185" cy="85" rx="81" ry="22" fill="#7c3f2d" stroke="#6b3b2b" stroke-width="7"/>
+      <ellipse cx="185" cy="85" rx="58" ry="11" fill="#402c28"/>
+      <path d="M95 330c56 28 127 30 180 0" fill="none" stroke="#efc275" stroke-width="9" stroke-dasharray="12 8"/>
+    </g>
+    <g transform="translate(400 250)">
+      <path d="M64 56h120l-10 47c-4 23 9 40 27 54 42 32 51 97 9 134-36 32-105 34-145 6-43-30-47-98-9-131 22-20 31-36 26-65Z" fill="url(#cream)" stroke="#7b5a45" stroke-width="7"/>
+      <ellipse cx="124" cy="56" rx="61" ry="17" fill="#c4ae88" stroke="#7b5a45" stroke-width="7"/>
+      <ellipse cx="124" cy="56" rx="43" ry="8" fill="#5c4435"/>
+      <path d="M62 186c38 25 85 25 123 0" fill="none" stroke="#c34e3e" stroke-width="8" stroke-dasharray="11 7"/>
+    </g>
+  </g>
+  <rect x="0" y="0" width="800" height="1000" fill="url(#grain)"/>
+  <g transform="translate(580 640)"><path d="M0 127c0-54 42-91 93-91s94 37 94 91" fill="none" stroke="#5c7950" stroke-width="18" stroke-linecap="round"/><path d="M60 46C-15 4 3-87 63-63c15 6 26 17 35 30 16-38 74-43 89-7 14 33-21 59-48 66 49 13 64 69 27 92-39 25-73-13-85-43-23 35-76 39-96 2-15-27 5-58 35-68-17-17-30-41-10-65Z" fill="#607f52"/></g>
+</svg>

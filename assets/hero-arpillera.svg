@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 880" role="img" aria-labelledby="title desc">
+  <title id="title">Arpillera Chilean inspirada en el paisaje del sur</title>
+  <desc id="desc">Tapiz artesanal con flores, montañas, casas y geometrías coloridas.</desc>
+  <defs>
+    <filter id="cloth" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="8" result="noise"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="soft-light"/>
+    </filter>
+    <pattern id="weave" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0 2h14M0 7h14M2 0v14M7 0v14" stroke="#fff" stroke-width="1" opacity=".08"/>
+      <path d="M0 4.5h14M4.5 0v14" stroke="#533425" stroke-width=".7" opacity=".08"/>
+    </pattern>
+    <pattern id="border" width="38" height="38" patternUnits="userSpaceOnUse">
+      <rect width="38" height="38" fill="#244c3d"/>
+      <path d="M19 5 33 19 19 33 5 19Z" fill="#e3a638"/>
+      <circle cx="19" cy="19" r="4" fill="#d9634b"/>
+    </pattern>
+    <g id="flower">
+      <circle cx="0" cy="-17" r="11" fill="#f3c95f"/>
+      <circle cx="17" cy="0" r="11" fill="#f3c95f"/>
+      <circle cx="0" cy="17" r="11" fill="#f3c95f"/>
+      <circle cx="-17" cy="0" r="11" fill="#f3c95f"/>
+      <circle r="8" fill="#c94f45"/>
+    </g>
+    <g id="tiny-flower">
+      <path d="M0-12C6-20 12-11 7-5 17-7 19 4 9 7c7 8-3 16-9 6-4 10-16 3-10-5-12 1-13-12-4-10-2-11 10-12 11-2 4-5 7-8 10-9Z" fill="#f2d8a2" stroke="#5a3b35" stroke-width="2"/>
+      <circle r="4" fill="#d85a4a"/>
+    </g>
+  </defs>
+
+  <rect width="720" height="880" rx="28" fill="#efe7d8"/>
+  <path d="M294 46c-8-46 124-46 116 0" fill="none" stroke="#553b2e" stroke-width="10" stroke-linecap="round"/>
+  <rect x="52" y="64" width="616" height="750" rx="12" fill="#1f4236" filter="url(#cloth)"/>
+  <rect x="67" y="79" width="586" height="720" fill="url(#border)"/>
+  <rect x="92" y="104" width="536" height="670" fill="#d0a06d"/>
+  <rect x="92" y="104" width="536" height="670" fill="url(#weave)"/>
+
+  <path d="M92 104h536v182H92z" fill="#67b5b3"/>
+  <circle cx="356" cy="164" r="48" fill="#f2bc4c" stroke="#714336" stroke-width="5" stroke-dasharray="7 5"/>
+  <g stroke="#714336" stroke-width="4">
+    <path d="M356 103v-17M356 242v-17M295 164h-17M434 164h-17M314 122l-12-12M410 218l-12-12M398 122l12-12M302 218l12-12"/>
+  </g>
+  <path d="M92 276 205 182l87 76 80-114 88 111 78-83 90 111v54H92Z" fill="#55794d" stroke="#5c3a2d" stroke-width="5" stroke-dasharray="8 5"/>
+  <path d="m92 305 113-78 80 65 94-117 91 116 73-62 85 71" fill="none" stroke="#f0d9a8" stroke-width="8" opacity=".85"/>
+
+  <g transform="translate(175 280)">
+    <path d="M0 67h145v95H0z" fill="#efe4bd" stroke="#5c3a2d" stroke-width="5"/>
+    <path d="m-12 70 85-61 85 61Z" fill="#c65042" stroke="#5c3a2d" stroke-width="5" stroke-dasharray="7 4"/>
+    <path d="M58 94h35v68H58z" fill="#315f65" stroke="#5c3a2d" stroke-width="4"/>
+    <path d="M17 91h27v26H17zM104 91h27v26h-27z" fill="#72b4b4" stroke="#5c3a2d" stroke-width="4"/>
+  </g>
+  <g transform="translate(455 318)">
+    <path d="M0 50h110v86H0z" fill="#f2dcb0" stroke="#5c3a2d" stroke-width="5"/>
+    <path d="m-10 54 65-48 65 48Z" fill="#e29b35" stroke="#5c3a2d" stroke-width="5" stroke-dasharray="7 4"/>
+    <path d="M41 72h31v64H41z" fill="#b6493f" stroke="#5c3a2d" stroke-width="4"/>
+    <path d="M13 70h21v24H13zM76 70h21v24H76z" fill="#72b4b4" stroke="#5c3a2d" stroke-width="4"/>
+  </g>
+
+  <path d="M92 399h536v375H92z" fill="#d6ad75"/>
+  <g fill="#bf5140" stroke="#5c3a2d" stroke-width="4">
+    <path d="M100 423h100l-13 73H112Z"/>
+    <path d="M216 407h126l-19 89H232Z"/>
+    <path d="M381 418h104l-11 78h-88Z"/>
+    <path d="M501 395h119l-16 101h-96Z"/>
+  </g>
+  <g fill="#e7a33b" stroke="#5c3a2d" stroke-width="4">
+    <path d="M120 520h100l-10 74H128Z"/>
+    <path d="M237 522h101l-14 72h-81Z"/>
+    <path d="M357 515h112l-8 79H363Z"/>
+    <path d="M480 530h140v66H470Z"/>
+  </g>
+  <g stroke="#446842" stroke-width="10" stroke-linecap="round">
+    <path d="M145 565c-8-27-5-43 4-58M169 565c10-31 6-45-3-61M270 562c-7-28-2-44 6-61M298 562c8-28 4-44-4-58M398 559c-7-27-3-45 7-58M428 560c10-25 5-42-2-57M535 566c-8-32-2-47 7-61M570 565c9-30 5-45-4-58"/>
+  </g>
+
+  <g transform="translate(120 649) scale(.9)"><use href="#flower"/></g>
+  <g transform="translate(205 710) scale(.72)"><use href="#tiny-flower"/></g>
+  <g transform="translate(601 635) scale(.95)"><use href="#flower"/></g>
+  <g transform="translate(518 728) scale(.7)"><use href="#tiny-flower"/></g>
+
+  <g transform="translate(360 596)">
+    <path d="M0-82 22-51l43-14-4 45 42 18-32 30 19 40-44 5-12 43-34-30-36 28-9-44-43-8 22-38-30-32 44-14 1-46 40 18Z" fill="#e8ad3b" stroke="#5c3a2d" stroke-width="5" stroke-dasharray="7 5"/>
+    <circle r="30" fill="#245a50" stroke="#5c3a2d" stroke-width="4"/>
+    <use href="#tiny-flower" transform="scale(1.15)"/>
+  </g>
+
+  <rect x="92" y="104" width="536" height="670" fill="url(#weave)" opacity=".5"/>
+  <path d="M92 104h536v670H92z" fill="none" stroke="#5c3a2d" stroke-width="4" stroke-dasharray="10 7"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Portavelas de madera Cumbre de ulmo</title>
+  <defs>
+    <filter id="shadow" x="-40%" y="-30%" width="180%" height="180%"><feDropShadow dx="0" dy="25" stdDeviation="25" flood-color="#4b2d24" flood-opacity=".28"/></filter>
+    <linearGradient id="wood" x1="0" x2="1"><stop stop-color="#75422d"/><stop offset=".22" stop-color="#bb7745"/><stop offset=".48" stop-color="#805036"/><stop offset=".72" stop-color="#c58552"/><stop offset="1" stop-color="#70402d"/></linearGradient>
+    <pattern id="rings" width="180" height="52" patternUnits="userSpaceOnUse"><path d="M-10 26c29-22 57-22 86 0s57 22 86 0 57-22 86 0" fill="none" stroke="#5d3425" stroke-width="5" opacity=".3"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="#d9c6a5"/>
+  <path d="M0 0h800v246c-188 71-419 32-800 125Z" fill="#274d43"/>
+  <g transform="translate(40 125)" opacity=".42" fill="none" stroke="#e0b44c" stroke-width="6"><path d="M70 88 90 48l19 40M90 48l36 17M90 48 62 72M132 102l38 21-23 12-32-10-24 19-37-20 24-21-23-12 37-21M328 56l17-32 18 32M345 24l31 15M345 24l-25 20M372 100l35 19-22 11-28-8-21 16-32-17 21-18-20-10 31-18"/></g>
+  <path d="M0 804c205-42 425-33 800 3v193H0z" fill="#c4ad85"/>
+  <ellipse cx="403" cy="824" rx="283" ry="48" fill="#4c3027" opacity=".15"/>
+  <g filter="url(#shadow)">
+    <path d="M190 745c67-78 103-180 108-307h184c5 127 41 229 108 307l-38 92H228Z" fill="url(#wood)" stroke="#5c3526" stroke-width="8"/>
+    <path d="M190 745c67-78 103-180 108-307h184c5 127 41 229 108 307l-38 92H228Z" fill="url(#rings)"/>
+    <path d="M235 700c44-30 79-60 108-105M565 700c-44-30-79-60-108-105M252 640c42-14 70-34 102-66M548 640c-42-14-70-34-102-66" fill="none" stroke="#653825" stroke-width="6" opacity=".55"/>
+    <path d="M300 438h200l-18 63H318Z" fill="#c25742" stroke="#5c3526" stroke-width="7"/>
+    <path d="M321 451h158l-8 30H329Z" fill="#e0aa3c" stroke="#5c3526" stroke-width="5" stroke-dasharray="7 5"/>
+    <path d="M345 241h110v198H345z" fill="#f0e2bf" stroke="#704330" stroke-width="6"/>
+    <path d="M362 241V163c0-25 18-45 43-45s43 20 43 45v78" fill="#f7efd7" stroke="#704330" stroke-width="6"/>
+    <path d="M405 100v124" stroke="#d5b86d" stroke-width="4"/>
+    <path d="M405 95c-14-22-5-45 13-54-1 21 4 38-13 54Z" fill="#e77c3c"/><path d="M405 110c18-19 11-44-5-56-1 22-6 39 5 56Z" fill="#e2ad39"/>
+  </g>
+</svg>

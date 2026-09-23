@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title">
+  <title id="title">Canasto de cestería Trama del sur</title>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="28" stdDeviation="25" flood-color="#4e352b" flood-opacity=".25"/></filter>
+    <pattern id="weave" width="42" height="32" patternUnits="userSpaceOnUse"><path d="M0 16h42M21 0v32" stroke="#9c6338" stroke-width="4" opacity=".4"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="#d8c7a6"/>
+  <circle cx="620" cy="180" r="118" fill="#df704d" opacity=".55"/>
+  <path d="M0 801c196-25 414-19 800 9v190H0z" fill="#c9b58e"/>
+  <ellipse cx="400" cy="813" rx="292" ry="47" fill="#51362d" opacity=".14"/>
+  <g filter="url(#shadow)">
+    <path d="M252 329C247 167 300 83 400 83s154 84 149 246" fill="none" stroke="#74452e" stroke-width="42" stroke-linecap="round"/>
+    <path d="M252 329C247 167 300 83 400 83s154 84 149 246" fill="none" stroke="#bd7c45" stroke-width="23" stroke-linecap="round" stroke-dasharray="9 7"/>
+    <path d="M171 337h458l-42 390c-3 28-27 50-55 50H268c-28 0-52-22-55-50Z" fill="#ce9356" stroke="#70452f" stroke-width="8"/>
+    <path d="M180 370h440l-8 76H188Z" fill="#b94e3e" stroke="#70452f" stroke-width="6"/>
+    <path d="M191 473h418l-8 78H199Z" fill="#e2ad3f" stroke="#70452f" stroke-width="6"/>
+    <path d="M201 578h398l-8 80H209Z" fill="#557b65" stroke="#70452f" stroke-width="6"/>
+    <path d="M171 337h458l-42 390c-3 28-27 50-55 50H268c-28 0-52-22-55-50Z" fill="url(#weave)" opacity=".7"/>
+    <path d="M171 337h458l-42 390c-3 28-27 50-55 50H268c-28 0-52-22-55-50Z" fill="none" stroke="#70452f" stroke-width="8" stroke-dasharray="13 7"/>
+    <g fill="#e5bf6d" stroke="#70452f" stroke-width="4"><path d="m251 495 32-48 32 48-32 48Z"/><path d="m403 495 32-48 32 48-32 48Z"/><path d="m555 495 32-48 32 48-32 48Z"/></g>
+  </g>
+</svg>
